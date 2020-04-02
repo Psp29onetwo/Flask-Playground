@@ -1,0 +1,41 @@
+<!--&lt;!&ndash;{% %}&ndash;&gt;-->
+
+<!--{% extends "base.html" %}-->
+
+<!--{% block content %}-->
+
+<!--<div class="jumbotron">-->
+
+
+<!--</div>-->
+
+<!--{% endblock %}-->
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <p>Let'check ypur username</p>
+
+    {% if report %}
+    <p>Your Username passed all checks!!</p>
+    {% else %}
+    <ul>
+        {% if not lower %}
+            <li>You didnt entered any lower charcter in your username</li>
+        {% endif %}
+
+        {% if not upper %}
+            <li>You didnt entered any upper charcter in your username</li>
+        {% endif %}
+
+        {% if not num_end %}
+            <li>You didnt entered digit at the end of your username</li>
+        {% endif %}
+    </ul>
+    {% endif %}
+
+</div>
+
+{% endblock %}
