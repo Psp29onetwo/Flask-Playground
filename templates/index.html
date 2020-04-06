@@ -1,18 +1,29 @@
-{{% extends "base.html" %}}
+{% extends "base.html" %}
 
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-{{% block content %}}
+</head>
+<body>
 
-<div class="jumbotron">
+    <div class="jumbotron">
 
-    <h1>Provide username(that meets requirements)</h1>
-    <form action="{{url_for('report')}}">
-        <label for="username">Username</label>
-        <input type="text" name="username">
-        <input type="submit" value="Submit Form">
-    </form>
-
-</div>
+        <h1>Provide username(that meets requirements)</h1>
+        <form action="{{url_for('report')}}">
+            <label for="username">Username</label>
+            <input type="text" name="username">
+            <input type="submit" value="Submit Form">
+        </form>
+    
+    </div>
+    
+</body>
+</html>
 
 {% endblock %}
 

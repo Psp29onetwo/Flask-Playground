@@ -1,24 +1,10 @@
-<!--&lt;!&ndash;{% %}&ndash;&gt;-->
-
-<!--{% extends "base.html" %}-->
-
-<!--{% block content %}-->
-
-<!--<div class="jumbotron">-->
-
-
-<!--</div>-->
-
-<!--{% endblock %}-->
-
 {% extends "base.html" %}
 
 {% block content %}
-
 <div class="jumbotron">
-    <p>Let'check ypur username</p>
-
-    {% if report %}
+    <p>Let'check your username</p>
+    
+    {% if result %}
     <p>Your Username passed all checks!!</p>
     {% else %}
     <ul>
